@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Estoque</h1>
+        <form>
+            <div class="form-group">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" name="product-name" placeholder="Ex: Arroz, Feijão">
+            </div>
+            <div class="form-group">
+                <label for="product-quantity">Quantidade:</label>
+                <input type="number" id="product-quantity" name="product-quantity" placeholder="Ex: 50">
+            </div>
+            <div class="form-group">
+                <label for="product-price">Preço (R$):</label>
+                <input type="text" id="product-price" name="product-price" placeholder="Ex: 5.99">
+            </div>
+            <div class="form-group">
+                <label for="product-barcode">Código de Barras:</label>
+                <input type="text" id="product-barcode" name="product-barcode" placeholder="Ex: 1234567890123">
+            </div>
+            <div class="form-group">
+                <label for="product-category">Categoria:</label>
+                <select id="product-category" name="product-category">
+                    <option value="alimentos">Alimentos</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="limpeza">Produtos de Limpeza</option>
+                    <option value="higiene">Higiene Pessoal</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn add-btn">Adicionar Produto</button>
+                <button type="button" class="btn edit-btn">Editar Produto</button>
+                <button type="button" class="btn delete-btn">Excluir Produto</button>
+            </div>
+            <p class="back-link">
+                <a href="../Página Inicial /inicio.html">Voltar para a páginal incial </a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
