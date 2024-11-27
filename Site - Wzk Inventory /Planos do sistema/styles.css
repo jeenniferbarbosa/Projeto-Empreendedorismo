@@ -1,0 +1,77 @@
+/* Estilos para a página de planos */
+#planos {
+    margin-top: 30px;
+}
+
+.plano {
+    background-color: #e2eaea;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plano h2 {
+    font-size: 1.8em;
+    color: #1E313F;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plano h3 {
+    font-size: 1.4em;
+    color: #1E313F;
+    margin-top: 10px;
+}
+
+.plano ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.plano ul li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+#opcoes-pagamento, #promocao {
+    background-color: #e2eaea;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#opcoes-pagamento h2, #promocao h2 {
+    font-size: 1.8em;
+    color: #1E313F;
+    margin-bottom: 10px;
+}
+
+#opcoes-pagamento p, #promocao p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.link-paginainicial {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.link-paginainicial a {
+    text-decoration: none;
+    color: #1E313F;
+    font-size: 1.1em;
+}
+h1 {
+    font-size: 2em;
+    color: #1E313F;
+    margin-bottom: 10px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +7,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container"> <!-- Inicia um contêiner para centralizar e organizar o conteúdo -->
         <h1>Gerenciamento de Estoque</h1>
-        <form>
-            <div class="form-group">
-                <label for="product-name">Nome do Produto:</label>
-                <input type="text" id="product-name" name="product-name" placeholder="Ex: Arroz, Feijão">
+        <form> <!-- Início do formulário -->
+            <div class="grupo-formulario">
+                <label for="nome-produto">Nome do Produto:</label>
+                <input type="text" id="nome-produto" name="nome-produto" placeholder="Ex: Arroz, Feijão"> <!-- Campo de texto para o nome do produto. -->
             </div>
-            <div class="form-group">
-                <label for="product-quantity">Quantidade:</label>
-                <input type="number" id="product-quantity" name="product-quantity" placeholder="Ex: 50">
+            <div class="grupo-formulario">
+                <label for="nome-produto">Quantidade:</label>
+                <input type="number" id="=nome-produto" name="nome-produto" placeholder="Ex: 50"> <!-- Campo númerico. -->
             </div>
-            <div class="form-group">
-                <label for="product-price">Preço (R$):</label>
-                <input type="text" id="product-price" name="product-price" placeholder="Ex: 5.99">
+            <div class="grupo-formulario"> 
+                <label for="quantidade-produto">Preço (R$):</label>
+                <input type="number" id="quantidade-produto" name="quantidade-produto" placeholder="Ex: 5.99"> <!-- Campo númerico. -->
             </div>
-            <div class="form-group">
-                <label for="product-barcode">Código de Barras:</label>
-                <input type="text" id="product-barcode" name="product-barcode" placeholder="Ex: 1234567890123">
+            <div class="grupo-formulario">
+                <label for="codigo-barras">Código de Barras:</label>
+                <input type="text" id="codigo-barras" name="codigo-barras" placeholder="Ex: 1234567890123"> <!-- Campo de texto para o código de barras -->
             </div>
-            <div class="form-group">
-                <label for="product-category">Categoria:</label>
-                <select id="product-category" name="product-category">
+            <div class="grupo-formulario"> <!-- Categoriza os produtos -->
+                <label for="categoria-produtos">Categoria:</label>
+                <select id="categoria-produtos" name="categoria-produtos"> <!-- Campo de seleção com opções -->
+                    <!-- Defina cada opção -->
                     <option value="alimentos">Alimentos</option>
                     <option value="bebidas">Bebidas</option>
                     <option value="limpeza">Produtos de Limpeza</option>
                     <option value="higiene">Higiene Pessoal</option>
                 </select>
             </div>
-            <div class="form-actions">
-                <button type="submit" class="btn add-btn">Adicionar Produto</button>
-                <button type="button" class="btn edit-btn">Editar Produto</button>
-                <button type="button" class="btn delete-btn">Excluir Produto</button>
+            <div class="acoes"> <!-- Define as ações do formulário -->
+                <button type="submit" class="botao add-botao">Adicionar Produto</button> <!-- Envia os dados do formulário -->
+                <a href="../Inventario /inventario.html"> <!-- Link que direciona para o inventário -->
+                    <button type="button" class="botao edit-botao">Acessar Inventário</button> <!-- Botão que acessa o inventário -->
+                </a>
+                <button type="button" class="botao delete-botao">Excluir Produto</button> <!-- Exclui o produto adicionado -->
             </div>
-            <p class="back-link">
-                <a href="../Página Inicial /inicio.html">Voltar para a páginal incial </a>
+            <p class="link-voltar">
+                <a href="../Página Inicial /inicio.html">Voltar para a páginal incial </a> <!-- Direciona para a página incial -->
             </p>
         </form>
+
     </div>
 </body>
 </html>

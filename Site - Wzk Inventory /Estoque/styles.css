@@ -20,8 +20,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.grupo-formulario {
+    margin-bottom: 20px;
 }
 
 label {
@@ -45,39 +45,39 @@ input:focus, select:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-.form-actions {
+.acoes {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-.btn {
+.botao {
     flex: 1;
-    padding: 10px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     color: #fff;
 }
 
-.add-btn {
+.add-botao {
     background-color: #1E313F;
 }
 
-.edit-btn {
+.edit-botao {
     background-color: #333;
 }
 
-.delete-btn {
+.delete-botao {
     background-color: #121111;
 }
 
-.btn:hover {
+.botao:hover {
     opacity: 0.9;
 }
 
-.back-link {
+.link-voltar {
     text-align: center;
     margin-top: 20px; 
 }

@@ -1,11 +1,11 @@
 /* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
-    background-color: #d8ddd8; /* Fundo principal */
+    background-color: #d8ddd8; 
     margin: 0;
     padding: 0;
     text-align: center;
-    color: #1E313F; /* Texto principal */
+    color: #1E313F;
 }
 
 .container {
@@ -20,18 +20,18 @@ header {
 
 h1 {
     font-size: 2.5em;
-    color: #1E313F; /* Título com tom escuro */
+    color: #1E313F; 
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1.1em;
-    color: #555; /* Texto mais suave */
+    color: #555; 
 }
 
 /* Formulários */
 form {
-    background: #e2eaea; /* Fundo dos formulários */
+    background: #e2eaea;
     border: 1px solid #b0c4c4; /* Borda harmônica */
     border-radius: 10px;
     padding: 40px;
@@ -91,7 +91,7 @@ button:active {
     background-color: #555;
 }
 
-.back-link {
+.botao-retornar {
     text-align: center;
     margin-top: 20px; 
 }
@@ -111,4 +111,8 @@ a:hover {
 
 a:active {
     color: #1E313F;
+}
+.retornar {
+    text-align: center;
+    margin-top: 20px; 
 }
