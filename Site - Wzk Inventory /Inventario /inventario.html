@@ -17,6 +17,7 @@
                     <th>Preço (R$)</th>
                     <th>Código de Barras</th>
                     <th>Categoria</th>
+                    <th>Excluir</th> <!-- Adiciona coluna para exclusão -->
                 </tr>
             </thead>
             <tbody id="lista-produtos">
@@ -27,8 +28,52 @@
         </p>
     </div>
     <script>
-        // Nesta parte é o ficará os dados do Google Sheets
-        
-    </script>
+        // Recupera os produtos armazenados no LocalStorage
+        let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+
+        // Seleciona o corpo da tabela onde os produtos serão exibidos
+        const listaProdutos = document.querySelector("#lista-produtos");
+
+        // Função para renderizar a tabela
+        function renderizarTabela() {
+            listaProdutos.innerHTML = ""; // Limpa a tabela antes de renderizar novamente
+
+            produtos.forEach((produto, index) => {
+                // Cria uma nova linha para o produto
+                const linha = document.createElement("tr");
+
+                // Define o conteúdo da linha com os dados do produto
+                linha.innerHTML = `
+                    <td>${produto.nome}</td>
+                    <td>${produto.quantidade}</td>
+                    <td>R$ ${parseFloat(produto.preco).toFixed(2)}</td>
+                    <td>${produto.codigoBarras}</td>
+                    <td>${produto.categoria}</td>
+                    <td>
+                        <button class="btn-excluir" data-index="${index}">Excluir</button>
+                    </td>
+                `;
+
+                // Adiciona a linha à tabela
+                listaProdutos.appendChild(linha);
+            });
+
+            // Adiciona eventos de clique aos botões de exclusão
+            document.querySelectorAll(".btn-excluir").forEach(botao => {
+                botao.addEventListener("click", excluirProduto);
+            });
+        }
+
+        // Função para excluir um produto
+        function excluirProduto(event) {
+            const index = event.target.dataset.index; // Obtém o índice do produto no array
+            produtos.splice(index, 1); // Remove o produto do array
+            localStorage.setItem("produtos", JSON.stringify(produtos)); // Atualiza o LocalStorage
+            renderizarTabela(); // Rerenderiza a tabela
+        }
+
+        // Renderiza a tabela inicial
+        renderizarTabela();
+    </script>    
 </body>
 </html>
