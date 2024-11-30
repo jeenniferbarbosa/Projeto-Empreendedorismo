@@ -30,7 +30,7 @@ body {
 }
 
 .container:hover {
-    transform: translateY(-3px); /* Pequena elevação */
+    transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -85,7 +85,7 @@ a {
 }
 
 a:hover {
-    color: #2B4857; /* Um leve escurecimento */
+    color: #2B4857;
     text-decoration: underline;
 }
 
@@ -111,32 +111,54 @@ a:hover {
     section p {
         font-size: 0.95em;
     }
+
+    .membro {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .membro {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 .equipe-fotos {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Espaçamento entre as imagens */
+    gap: 10px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .membro {
     text-align: center;
-    flex: 1; /* Assegura que as imagens tenham tamanhos iguais */
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.membro.ceo {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    margin-top: 20px; 
 }
 
 .equipe-img {
     width: 100%;
     max-width: 150px;
-    border-radius: 50%; /* Deixa as imagens circulares */
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
 
 .equipe-img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1);
 }
+
 .card-planos {
     display: flex;
     flex-direction: column;
